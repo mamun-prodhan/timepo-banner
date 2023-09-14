@@ -9,7 +9,7 @@ const BannerWhite = () => {
     <div className="w-[1440px] bg-[#FFF]">
       {/* top bg */}
       <div
-        className="hidden md:block mb-20"
+        className="hidden md:block mb-10 lg:mb-20"
         style={{
           height: "208px",
           backgroundImage: `url(${paintBG})`,
