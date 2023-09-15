@@ -6,35 +6,35 @@ import logout from "../../assets/Logout.png";
 
 const BannerWhite = () => {
   return (
-    <div className="w-[1440px] bg-[#FFF]">
+    <div className="max-w-[1440px] bg-[#FFF]">
       {/* top bg */}
       <div
-        className="hidden md:block mb-10 lg:mb-20"
+        className="hidden md:block mb-10 lg:mb-20 md:h-[208px]"
         style={{
-          height: "208px",
           backgroundImage: `url(${paintBG})`,
           backgroundRepeat: "no-repeat",
         }}
       ></div>
       {/* watch bg */}
       <div
-        className="px-16 md:px-20 lg:px-40"
+        className="px-6 md:px-16 lg:px-20 xl:px-40 h-[280px] md:h-[585px]"
         style={{
-          height: "585px",
           backgroundImage: `url(${watchBG})`,
           backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <div className="flex justify-between items-center">
           <div className="w-1/6">
-            <img className="float-left w-[96px] h-[48px]" src={toggle} alt="" />
+            <img className="float-left" src={toggle} alt="" />
           </div>
           <div className="w-2/3">
             <img className="mx-auto" src={timepoLogo} alt="" />
           </div>
           <div className="w-1/6">
             <img
-              className="float-right w-[48px] h-[50px]"
+              className="float-right w-[38px] md:w-[48px] h-[40px] md:h-[50px]"
               src={logout}
               alt=""
             />
